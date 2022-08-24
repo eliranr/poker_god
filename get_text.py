@@ -27,6 +27,7 @@ def theReds(img):
 
 def getPot(img):
     im1 = img.crop((819, 322, 890, 352))
+    ## בעיה אם זה all in
     text = pytesseract.image_to_string(im1).split()[0]
     text = text.replace('$', '')
     text = float(text)

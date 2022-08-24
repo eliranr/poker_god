@@ -19,7 +19,7 @@ def calculate(table, hand):
         the_hands.extend(['?', '?'])
         res = holdem_calc.calculate(table, False, 1, None, the_hands, False)
         ret = int(round(res[0] + res[1] , 2) * 100) - 30
-        print(ret)
+        #print(ret)
         return ret
     except Exception as e:
         print('odds.py 30')
@@ -53,7 +53,7 @@ def calculateMonte(table, hand):
             res = holdem_calc.calculate(table, False, 1, None, the_hands, False)
             averge += res[0] + res[1]
         ret = int(round(averge/monte*100, 2) - 30)
-        print(ret)
+        #print(ret)
         return ret
     except Exception as e:
         print('odds.py 60')

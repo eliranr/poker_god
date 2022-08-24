@@ -36,7 +36,7 @@ first4 = True
 
 while False:
     print('------')
-    #mouse.position = (100, 100)
+    mouse.position = (100, 100)
     im = pyautogui.screenshot()
     pix = im.load()
 
